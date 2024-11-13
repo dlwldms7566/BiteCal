@@ -21,3 +21,19 @@ python:
    install:
    - requirements: docs/source/requirements.txt
         
+name: Build Docs
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: pip install sphinx
+      - name: Build documentation
+        run: sphinx-build docs docs/_build
