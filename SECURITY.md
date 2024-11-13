@@ -1,7 +1,7 @@
-Security Policy for BiteCal
+# Security Policy for BiteCal
 
 
-Reporting a Vulnerability
+## Reporting a Vulnerability
 Thank you for helping to make BiteCal secure! We take the security of our project seriously and value the contributions of the community to identify and report potential vulnerabilities. Please follow the steps below if you discover a security issue.
 
 
@@ -28,7 +28,7 @@ Once the vulnerability is confirmed, we will work on developing a fix as quickly
 4. Disclosure Policy
 After the vulnerability is resolved, we will publish a security advisory to inform the community. We will credit the person(s) who reported the vulnerability, unless they wish to remain anonymous.
 
-Important Notes
+## Important Notes
 -Do not open a public issue on GitHub to report security vulnerabilities. Always use the private email method to prevent potential risks until the issue is resolved.
 -For general issues and bug reports that are not security-related, please use the GitHub Issues page.
 
