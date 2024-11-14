@@ -6,6 +6,116 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <header>
+        <div class="row">
+            <div class="fixed-left-menu">
+                <div class="menu-btn">
+                    <div class="menu-btn__burger"></div>
+                </div>
+            </div>
+            <div class="fixed-right-menu">
+                <i class="fas fa-search" onclick=""></i>
+            </div>
+            <div class="col-12">
+                <a href="index.html">I'm Foodie</a>
+            </div>
+        </div>
+        <div class="sideNav">
+            <a href="index.html">I'm Foodie</a>
+            <a href="foodie-calendar.html">Foodie Calendar</a>
+            <a href="foodie-log.html">Foodie Log</a>
+            <a href="foodie-star.html">Foodie Star</a>
+        </div>
+    </header>
+
+    <section class="description">
+        <div class="row">
+            <div class="col-12">
+                <p class="title">&#x1F389 Welcome to I'm Foodie.</p>
+                <p class="content">&#x1F60D Create your own food calendar</p>
+                <p class="content">&#x2728 Share your food log with others</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="image-card">
+        <div class="row">
+            <a href="foodie-calendar.html">
+                <div class="image-text-container col-12 col-sm-4">
+                    <div class="top-left">
+                        <h2>Foodie Calendar</h2>
+                        <p>Write your own food log</p>
+                        <p>Start Writing <i class="fas fa-arrow-right"></i></p>
+                    </div>
+                </div>
+            </a>
+            <a href="foodie-log.html">
+                <div class="image-text-container col-12 col-sm-4">
+                    <div class="top-left">
+                        <h2>Foodie Log</h2>
+                        <p>See others' food logs</p>
+                        <p>View Now <i class="fas fa-arrow-right"></i></p>
+                    </div>
+                </div>
+            </a>
+            <a href="foodie-star.html">
+                <div class="image-text-container col-12 col-sm-4">
+                    <div class="top-left">
+                        <h2>Foodie Star</h2>
+                        <p>Find food log stars</p>
+                        <p>Discover <i class="fas fa-arrow-right"></i></p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="myfood_log">
+        <div class="title row">
+            <div class="left col-6">
+                &#x1F449 My Latest Food Log
+            </div>
+            <div class="right col-6">
+                <a href="#">All</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="carousel-slider">
+        <div class="title row">
+            <div class="left col-6">
+                &#x2B50 Star Food Log
+            </div>
+            <div class="right col-6">
+                <a href="#">All</a>
+            </div>
+        </div>
+        <div class="container">
+            <a href="#">
+                <div class="mySlides">
+                    <div class="numbertext">1 / 3</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="container">
+            <div class="mySlides">
+                <div class="numbertext">2 / 3</div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="mySlides">
+                <div class="numbertext">3 / 3</div>
+            </div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+    </section>
 </body>
 </html>
