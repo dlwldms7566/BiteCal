@@ -1,0 +1,26 @@
+title: "BiteCal"
+description: "나만의 음식 로그와 캘린더를 공유하는 플랫폼"
+url: "http://localhost:4000"
+baseurl: "/BiteCal"
+author: "BiteCal"
+
+# 디렉토리 및 출력 설정
+markdown: kramdown
+permalink: pretty
+timezone: "Asia/Seoul"
+
+# SEO 및 플러그인
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# 제외할 파일
+exclude:
+  - README.md
+  - node_modules
+  - .git
+  - .vscode
+
+# 언어 설정
+lang: "ko"

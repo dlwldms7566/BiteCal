@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>BiteCal</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+</head>
+<body>
+    <header>
+    <div class="row">
+        <div class="fixed-left-menu">
+            <div class="menu-btn">
+                <div class="menu-btn__burger"></div>
+            </div>
+        </div>
+        <div class="fixed-right-menu">
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="col-12">
+            <a href="index.html">BiteCal</a>
+        </div>
+    </div>
+    <div class="sideNav">
+        <a href="/bite-calendar.html">BiteCalender</a>
+        <a href="/bite-log.html">BiteLog</a>
+        <a href="/bite-star.html">BiteStar</a>
+    </div>
+</header>
+
+<style>
+header {
+    background-color: #FFAF7A; 
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    font-family: 'Jua', sans-serif; /* 헤더 폰트 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header a:hover {
+    color: #FFDAB9; /* 링크 호버 색상 */
+}
+
+.sideNav {
+    background-color: #FF7F50; /* 사이드 메뉴 색상 */
+    padding: 0.5rem;
+    color: white;
+    border-top: 3px solid #FF6347; /* 구분선 */
+}
+</style>
+
+
+    <main>
+        <section class="description">
+    <div class="row">
+        <div class="col-12">
+            <p class="title">&#x1F389 BiteCal 에 오신것을 환영합니다.</p>
+            <p class="content">&#x1F60D 나만의 음식 캘린더를 만들어 보세요</p>
+            <p class="content">&#x2728 음식 로그를 서로 공유해 보세요</p>
+        </div>
+    </div>
+</section>
+
+<section class="image-card">
+  <div class="row">
+    <a href="bite-calendar.html" class="card">
+      <img src="/assets/images/food1.jpg" alt="BiteCalender">
+      <h2>BiteCalender</h2>
+      <p>나만의 푸드 로그를 작성해보세요</p>
+    </a>
+    <a href="bite-log.html" class="card">
+      <img src="/assets/images/food2.jpg" alt="BiteLog">
+      <h2>BiteLog</h2>
+      <p>다른 사람의 푸드 로그를 구경 해보세요</p>
+    </a>
+    <a href="bite-star.html" class="card">
+      <img src="/assets/images/food3.jpg" alt="BiteStar">
+      <h2>BiteStar</h2>
+      <p>푸드 로그 스타를 찾아보세요</p>
+    </a>
+  </div>
+</section>
+
+    </main>
+    <footer>
+    <div class="row">
+        <div class="col-12">
+            <p>CopyRight - BiteCal</p>
+            <p>Email - kwen0730@gmail.com</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="/assets/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<header>
+    <div class="row">
+        <div class="fixed-left-menu">
+            <div class="menu-btn">
+                <div class="menu-btn__burger"></div>
+            </div>
+        </div>
+        <div class="fixed-right-menu">
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="col-12">
+            <a href="index.html">BiteCal</a>
+        </div>
+    </div>
+    <div class="sideNav">
+        <a href="{{ '/bite-calendar.html' | relative_url }}">BiteCalender</a>
+        <a href="{{ '/bite-log.html' | relative_url }}">BiteLog</a>
+        <a href="{{ '/bite-star.html' | relative_url }}">BiteStar</a>
+    </div>
+</header>
+
+<style>
+header {
+    background-color: #FFAF7A; 
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    font-family: 'Jua', sans-serif; /* 헤더 폰트 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header a:hover {
+    color: #FFDAB9; /* 링크 호버 색상 */
+}
+
+.sideNav {
+    background-color: #FF7F50; /* 사이드 메뉴 색상 */
+    padding: 0.5rem;
+    color: white;
+    border-top: 3px solid #FF6347; /* 구분선 */
+}
+</style>
+
