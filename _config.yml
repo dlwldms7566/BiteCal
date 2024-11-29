@@ -1,8 +1,9 @@
 title: "BiteCal"
-description: "나만의 음식 로그와 캘린더를 공유하는 플랫폼"
+description: "BiteCal is a platform for logging meals, tracking dietary habits, and gaining insights to make healthier food choices."
 url: "http://localhost:4000"
 baseurl: "/BiteCal"
 author: "BiteCal"
+contact_email: "kwen0730@gmail.com"
 
 # 디렉토리 및 출력 설정
 markdown: kramdown

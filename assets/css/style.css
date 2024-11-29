@@ -1,5 +1,5 @@
 body {
-  font-family: 'Nanum Gothic Coding', sans-serif;
+  font-family: 'Nanum Gothic', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -10,13 +10,140 @@ header {
   text-align: center;
   color: white;
   font-size: 1.5rem;
+  position: relative;
+}
+
+.header-title {
+  font-size: 48px; /* 원하는 크기로 조정 */
+  font-weight: bold; /* 폰트 굵게 */
+  color: white; /* 타이틀 색상 */
+  text-align: center; /* 중앙 정렬 */
+  display: block; /* 중앙 정렬을 위해 블록 요소로 설정 */
+}
+
+/* 왼쪽 상단 메뉴 아이콘 */
+.fixed-left-menu {
+  position: fixed;
+  left: 10px; /* 왼쪽으로 10px 여백 */
+  top: 10px; /* 상단에 10px 여백 */
+  z-index: 10;
+}
+
+.fixed-left-menu .menu-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;  /* 가로 크기 */
+  height: 25px; /* 세로 크기 */
+  cursor: pointer;
+}
+
+.fixed-left-menu .menu-btn__burger {
+  width: 100%;
+  height: 5px; /* 각 줄의 높이 */
+  background-color: white;
+  border-radius: 5px;
+}
+
+/* 오른쪽 상단 돋보기 아이콘 */
+.fixed-right-menu {
+  position: absolute;
+  right: 10px; /* 오른쪽으로 10px 여백 */
+  top: 10px; /* 제일 상단에 위치 */
+}
+
+.fixed-right-menu i {
+  font-size: 30px;  /* 아이콘 크기 */
+  cursor: pointer;
+}
+
+/* 메뉴 아이콘 */
+.menu-icon {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 1; /* 메뉴가 겹쳐서 보이지 않게 설정 */
+}
+
+.newSideNav {
+  position: fixed;
+  top: 0;
+  left: -250px; /* 왼쪽으로 숨기기 */
+  width: 250px;
+  height: 100%;
+  background-color: #FFE2C3;
+  transition: left 0.3s ease;
+  padding-top: 60px;
+}
+
+/* 사이드 메뉴가 열린 상태 */
+.newSideNav.open {
+  left: 0; /* 메뉴가 보이도록 왼쪽 위치 변경 */
+}
+
+/* 메뉴 링크 스타일 */
+.newSideNav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+/* 링크에 마우스 올릴 때 색상 변경 */
+.newSideNav a:hover {
+  color:  #FF8364;
+}
+
+/* 검색창 기본 스타일 */
+.search-bar {
+  display: none;  /* 처음에는 숨김 */
+  position: absolute;
+  top: 60px;  /* 헤더 아래에 위치 */
+  right: 20px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  z-index: 10;
+}
+
+/* 검색창 나타날 때 */
+.search-bar.active {
+  display: block;  /* 토글되어 보이게 설정 */
+}
+
+/* 검색 입력 필드 스타일 */
+.search-bar input {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.search-bar button {
+  padding: 10px 15px;
+  background-color: #FFAF7A;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #ff9c56;
 }
 
 .description {
   text-align: center;
   margin: 2rem 0;
 }
-/* 기본 스타일 */
+
 .image-card .row {
   display: flex;
   justify-content: space-between; /* 카드 간격 조정 */
@@ -53,4 +180,43 @@ header {
   transform: scale(1.05);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
+
+.sideNav a {
+  display: inline-block; /* 텍스트를 한 줄로 배치 */
+  letter-spacing: 2px; /* 문자 간격을 넓힘 */
+  margin-right: 30px; /* 항목 간의 간격을 추가 */
+}
+
+footer {
+  background-color: #f8f8f8; /* 밝은 배경색 */
+  padding: 20px;
+  font-family: 'Nanum Gothic', sans-serif;
+  color: #333;
+}
+
+.footer-section {
+  margin-bottom: 20px;
+}
+
+.footer-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-description {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.footer-description a {
+  color: #1e88e5;
+  text-decoration: none;
+}
+
+.footer-description a:hover {
+  text-decoration: underline;
+}
+
+
 
