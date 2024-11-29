@@ -1,11 +1,165 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+---
+layout: default
+title: Food Log
+<!-- css: "{{ '/assets/css/log.css' | relative_url }}" -->
+---
+
+<main class="log-page">
+    <h1>Food Log</h1>
+    <p id="selected-date">Selected Date: </p>
+    <form id="diet-log-form">
+        <!-- Photo Upload -->
+        <div class="form-group">
+            <label for="meal-photo">Upload Photo:</label>
+            <input type="file" id="meal-photo" accept="image/*" required>
+        </div>
+
+        <!-- Meal Type -->
+        <div class="form-group">
+            <label for="meal-type">Meal Type:</label>
+            <select id="meal-type" required>
+                <option value="" disabled selected>Select meal type</option>
+                <option value="breakfast">Breakfast</option>
+                <option value="lunch">Lunch</option>
+                <option value="dinner">Dinner</option>
+                <option value="snack">Snack</option>
+            </select>
+        </div>
+
+        <!-- Current Time -->
+<div class="form-group">
+    <label for="current-time">Current Time:</label>
+    <input type="text" id="current-time" name="current_time" readonly required>
+</div>
+
+<script>
+    // Function to format the current date and time without seconds
+    function getCurrentTime() {
+        const now = new Date();
+        const year = now.getFullYear();
+        const month = String(now.getMonth() + 1).padStart(2, '0');
+        const day = String(now.getDate()).padStart(2, '0');
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        return `${year}-${month}-${day} ${hours}:${minutes}`;
+    }
+
+    // Set the current time in the input field when the page loads
+    document.addEventListener('DOMContentLoaded', () => {
+        const currentTimeInput = document.getElementById('current-time');
+        if (currentTimeInput) {
+            currentTimeInput.value = getCurrentTime();
+        }
+    });
+</script>
+        <!-- Meal Description -->
+        <div class="form-group">
+            <label for="meal-description">Description:</label>
+            <textarea id="meal-description" rows="4" placeholder="Write details about your meal here..." required></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn">Submit</button>
+    </form>
+
+    <!-- Display logs -->
+    <section id="log-display">
+        <h2>Your Logs</h2>
+        <ul id="log-list"></ul>
+    </section>
+</main>
+
+<script>
+    // Load selected date from local storage
+    const selectedDate = localStorage.getItem('selectedDate');
+    document.getElementById('selected-date').textContent = `Selected Date: ${selectedDate}`;
+
+    // Update form with the selected date
+    document.getElementById('current-time').value = selectedDate;
+
+    // Display logs for the selected date
+    function displayLogs() {
+        const logs = JSON.parse(localStorage.getItem('dietLogs')) || [];
+        const logList = document.getElementById('log-list');
+        logList.innerHTML = '';
+
+        logs
+            .filter(log => log.currentTime.startsWith(selectedDate))
+            .forEach(log => {
+                const logItem = document.createElement('li');
+                logItem.textContent = `${log.currentTime} - ${log.mealType}: ${log.mealDescription}`;
+                logList.appendChild(logItem);
+            });
+    }
     
-</body>
-</html>
+    // Function to format current time (without seconds)
+    function getCurrentTime() {
+        const now = new Date();
+        const year = now.getFullYear();
+        const month = String(now.getMonth() + 1).padStart(2, '0');
+        const day = String(now.getDate()).padStart(2, '0');
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        return `${year}-${month}-${day} ${hours}:${minutes}`;
+    }
+
+    // Initialize current time field
+    document.addEventListener('DOMContentLoaded', () => {
+        const currentTimeInput = document.getElementById('current-time');
+        currentTimeInput.value = getCurrentTime();
+    });
+
+    // Save log and reload
+    document.getElementById('diet-log-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const mealType = document.getElementById('meal-type').value;
+        const mealDescription = document.getElementById('meal-description').value;
+
+        const logs = JSON.parse(localStorage.getItem('dietLogs')) || [];
+        logs.push({
+            mealType,
+            currentTime: selectedDate,
+            mealDescription,
+        });
+        localStorage.setItem('dietLogs', JSON.stringify(logs));
+
+        displayLogs();
+    });
+
+    // Display logs on page load
+    document.addEventListener('DOMContentLoaded', displayLogs);
+</script>
+
+<style>
+    main.log-page {
+        font-family: 'Nanum Gothic Coding', monospace;
+        max-width: 600px;
+        margin: 0 auto;
+    padding: 20px;
+    }
+    .form-group {
+    margin-bottom: 15px;
+    }
+    label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    }
+    input, select, textarea, button {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    button {
+        background-color: #4CAF50;
+        color: white;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #45a049;
+    }
+</style>
