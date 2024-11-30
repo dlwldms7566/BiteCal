@@ -60,6 +60,7 @@ A:
 1. Navigate to the `docs/` directory:
 2. Build the documentation using Sphinx:
 3. Open the generated HTML files in `docs/_build/html`.
+
 4. Troubleshooting
 -------------------
 
@@ -74,4 +75,3 @@ A:
 
 A: Please report bugs by opening an issue on GitHub:
 [https://github.com/dlwldms7566/BiteCal/issues](https://github.com/dlwldms7566/BiteCal/issues).
-
