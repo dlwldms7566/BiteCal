@@ -1,21 +1,33 @@
 <header>
     <div class="row">
         <div class="fixed-left-menu">
-            <div class="menu-btn">
+            <div class="menu-btn" onclick="toggleMenu()">
+                <div class="menu-btn__burger"></div>
+                <div class="menu-btn__burger"></div>
                 <div class="menu-btn__burger"></div>
             </div>
         </div>
-        <div class="fixed-right-menu">
-            <i class="fas fa-search"></i>
-        </div>
         <div class="col-12">
-            <a href="index.html">BiteCal</a>
+            <a href="index.html" class="header-title">BiteCal</a>
+        </div>
+        <div class="fixed-right-menu">
+            <i class="fas fa-search" onclick="toggleSearch()"></i>
         </div>
     </div>
+    <div id="searchBar" class="search-bar">
+        <input type="text" placeholder="Search..." id="searchInput" />
+        <button onclick="search()">Search</button>
+    </div>
     <div class="sideNav">
-        <a href="{{ '/bite-calendar.html' | relative_url }}">BiteCalender</a>
-        <a href="{{ '/bite-log.html' | relative_url }}">BiteLog</a>
-        <a href="{{ '/bite-star.html' | relative_url }}">BiteStar</a>
+        <a href="calendar.html">BiteCalender</a>
+        <a href="log.html">BiteLog</a>
+        <a href="star.html">BiteStar</a>
+    </div>
+    <div class="newSideNav" id="newSideNav">
+        <a href="index.html">Home</a>
+        <a href="calendar.html">BiteCalender</a>
+        <a href="log.html">BiteLog</a>
+        <a href="star.html">BiteStar</a>
     </div>
 </header>
 
