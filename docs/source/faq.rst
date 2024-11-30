@@ -61,7 +61,7 @@ A:
 2. Build the documentation using Sphinx:
 3. Open the generated HTML files in `docs/_build/html`.
 4. Troubleshooting
--------------------
+---------------------------------------
 
 **Q: The website is not loading correctly. What should I do?**
 
