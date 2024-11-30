@@ -1,82 +1,8 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <title>Calendar</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
-</head>
-<body>
-    <header>
-    <div class="row">
-        <div class="fixed-left-menu">
-            <div class="menu-btn" onclick="toggleMenu()">
-                <div class="menu-btn__burger"></div>
-                <div class="menu-btn__burger"></div>
-                <div class="menu-btn__burger"></div>
-            </div>
-        </div>
-        <div class="col-12">
-            <a href="index.html" class="header-title">BiteCal</a>
-        </div>
-        <div class="fixed-right-menu">
-            <i class="fas fa-search" onclick="toggleSearch()"></i>
-        </div>
-    </div>
-    <div id="searchBar" class="search-bar">
-        <input type="text" placeholder="Search..." id="searchInput" />
-        <button onclick="search()">Search</button>
-    </div>
-    <div class="sideNav">
-        <a href="calendar.html">BiteCalender</a>
-        <a href="log.html">BiteLog</a>
-        <a href="star.html">BiteStar</a>
-    </div>
-    <div class="newSideNav" id="newSideNav">
-        <a href="index.html">Home</a>
-        <a href="calendar.html">BiteCalender</a>
-        <a href="log.html">BiteLog</a>
-        <a href="star.html">BiteStar</a>
-    </div>
-</header>
-
-<style>
-header {
-    background-color: #FFAF7A; 
-    color: white;
-    padding: 1rem 0;
-    text-align: center;
-    font-family: 'Jua', sans-serif; /* 헤더 폰트 */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-header a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-header a:hover {
-    color: #FFDAB9; /* 링크 호버 색상 */
-}
-
-.sideNav {
-    background-color: #FF7F50; /* 사이드 메뉴 색상 */
-    padding: 0.5rem;
-    color: white;
-    border-top: 3px solid #FF6347; /* 구분선 */
-}
-</style>
-
-
-    <main>
-        <main class="calendar-page">
+---
+layout: default
+title: Calendar
+---
+<main class="calendar-page">
     <h1>Meal Calendar</h1>
     <div class="calendar-navigation">
         <button id="prev-month" class="arrow">&lt;</button>
@@ -293,30 +219,3 @@ header a:hover {
     transform: scale(1.05);
     }
 </style>
-
-    </main>
-    <footer>
-    <div class="container">
-        <div class="footer-section">
-            <p class="footer-title">About BiteCal</p>
-            <p class="footer-description">
-                BiteCal is an intuitive platform that allows users to log their daily meals, track dietary habits, and gain insights into their eating patterns over time. <br>
-                Our mission is to help users make healthier food choices through meal tracking and evaluation.
-            </p>
-        </div>
-        <div class="footer-section">
-            <p class="footer-title">Contact Us</p>
-            <p class="footer-description">
-                <i class="fas fa-envelope"></i> <a href="mailto:kwen0730@gmail.com">kwen0730@gmail.com</a>
-            </p>
-        </div>
-    </div>
-</footer>
-
-    <script src="/assets/js/index.js"></script>
-    <script src="/assets/js/sidebar.js"></script>
-    <script src="/assets/js/calendar.js"></script>
-    <script src="/assets/js/search.js"></script>
-
-</body>
-</html>

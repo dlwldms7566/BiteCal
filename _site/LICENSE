@@ -1,0 +1,67 @@
+                                 Apache License
+                           Version 2.0, January 2004
+                        http://www.apache.org/licenses/
+
+   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+
+### 1. Definitions
+- **License**: Terms and conditions for use, reproduction, and distribution defined by Sections 1-9 of this document.
+- **Licensor**: The copyright owner or authorized entity granting the License.
+- **Legal Entity**: The union of the acting entity and entities it controls or is controlled by. "Control" means:
+  1. Direct or indirect power over management.
+  2. Ownership of 50% or more of outstanding shares.
+  3. Beneficial ownership of the entity.
+- **You (or Your)**: The individual or Legal Entity exercising permissions granted by this License.
+- **Source form**: Preferred form for making modifications (e.g., source code).
+- **Object form**: Resulting form from transforming Source form (e.g., compiled code).
+- **Work**: The work of authorship made available under the License.
+- **Derivative Works**: Any work based on the Work but separable from or linked to it.
+- **Contribution**: Any original work or modification intentionally submitted for inclusion in the Work.
+- **Contributor**: Licensor or any Legal Entity whose Contribution has been received by Licensor.
+
+### 2. Grant of Copyright License
+Each Contributor grants You a perpetual, worldwide, non-exclusive, no-charge, royalty-free copyright license to reproduce, prepare Derivative Works, publicly display, sublicense, and distribute the Work.
+
+### 3. Grant of Patent License
+Each Contributor grants You a perpetual, worldwide, non-exclusive, no-charge, royalty-free patent license to make, use, and distribute the Work, covering only those patent claims necessarily infringed by their Contributions.
+
+### 4. Redistribution
+You may reproduce and distribute copies of the Work or Derivative Works, with or without modifications, under these conditions:
+- **(a)** Provide a copy of this License with the Work.
+- **(b)** Prominently state modifications made.
+- **(c)** Retain notices in Source form for Derivative Works.
+- **(d)** Include a readable copy of notices from the "NOTICE" file in at least one of these: a NOTICE file, Source form, documentation, or a generated display. You may add your attribution notices in Derivative Works.
+
+### 5. Submission of Contributions
+Unless explicitly stated, any Contribution submitted to Licensor for inclusion in the Work is under the terms of this License.
+
+### 6. Trademarks
+This License does not grant permission to use Licensor's trademarks, except for describing the origin of the Work.
+
+### 7. Disclaimer of Warranty
+The Work is provided "AS IS," without warranties or conditions of any kind. You are responsible for determining the appropriateness of using or redistributing the Work.
+
+### 8. Limitation of Liability
+In no event will any Contributor be liable for damages arising from this License or the use of the Work, even if advised of the possibility of such damages.
+
+### 9. Accepting Warranty or Additional Liability
+When redistributing the Work, You may offer additional support or warranties at Your own risk, not on behalf of any other Contributor.
+
+## END OF TERMS AND CONDITIONS
+
+## APPENDIX: How to apply the Apache License to your work
+To apply the Apache License to your work, attach the following notice with appropriate information:
+```plaintext
+Copyright [YEAR] [Owner]
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for specific language governing permissions and
+limitations under the License.
