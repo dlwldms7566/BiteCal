@@ -73,5 +73,5 @@ A:
 **Q: I found a bug. How do I report it?**
 
 A: Please report bugs by opening an issue on GitHub:
-[https://github.com/sooheechoi/BiteCal/issues](https://github.com/sooheechoi/BiteCal/issues).
+[https://github.com/dlwldms7566/BiteCal/issues](https://github.com/dlwldms7566/BiteCal/issues).
 
