@@ -20,7 +20,6 @@ sphinx:
 python:
    install:
    - requirements: docs/source/requirements.txt       
-project: 'BiteCal'
 
 on:
   push:
