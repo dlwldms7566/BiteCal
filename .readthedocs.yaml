@@ -33,7 +33,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Install dependencies
         run: pip install sphinx
-      - name: Build documentation
         run: sphinx-build docs docs/_build
