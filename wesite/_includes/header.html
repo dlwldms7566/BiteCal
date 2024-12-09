@@ -1,0 +1,70 @@
+<header>
+  <div class="row">
+    {%- assign default_paths = site.pages | map: "path" -%} {%- assign
+    page_paths = site.header_pages | default: default_paths -%} {%- assign
+    titles_size = site.pages | map: 'title' | join: '' | size -%}
+    <div class="fixed-left-menu">
+      <div class="menu-btn" onclick="toggleMenu()">
+        <div class="menu-btn__burger"></div>
+        <div class="menu-btn__burger"></div>
+        <div class="menu-btn__burger"></div>
+      </div>
+    </div>
+    <div class="col-12">
+      <a href="/" class="header-title">BiteCal</a>
+    </div>
+    <div class="fixed-right-menu">
+      <i class="fas fa-search" onclick="toggleSearch()"></i>
+    </div>
+  </div>
+
+  <div id="searchBar" class="search-bar">
+    <input type="text" placeholder="Search..." id="searchInput" />
+    <button onclick="search()">Search</button>
+  </div>
+
+  {%- if titles_size > 0 -%}
+  <div class="sideNav">
+    {%- for path in page_paths -%} {%- assign my_page = site.pages | where:
+    "path", path | first -%} {%- if my_page.title -%}
+    <a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+    {%- endif -%} {%- endfor -%}
+  </div>
+  <div class="newSideNav" id="newSideNav">
+    {%- for path in page_paths -%} {%- assign my_page = site.pages | where:
+    "path", path | first -%} {%- if my_page.title -%}
+    <a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+    {%- endif -%} {%- endfor -%}
+  </div>
+  {%- endif -%}
+</header>
+
+<style>
+  header {
+    background-color: #ffaf7a;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    font-family: "Jua", sans-serif; /* 헤더 폰트 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  header a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+
+  header a:hover {
+    color: #ffdab9; /* 링크 호버 색상 */
+  }
+
+  .sideNav {
+    background-color: #ff7f50; /* 사이드 메뉴 색상 */
+    padding: 0.5rem;
+    color: white;
+    border-top: 3px solid #ff6347; /* 구분선 */
+  }
+</style>
