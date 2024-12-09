@@ -21,7 +21,7 @@ python:
    install:
    - requirements: docs/source/requirements.txt
         
-name: Build Docs
+project: 'BiteCal'
 
 on:
   push:
