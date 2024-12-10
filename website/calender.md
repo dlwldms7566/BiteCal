@@ -1,6 +1,5 @@
 ---
 layout: page
-order: 2
 title: Calender
 permalink: /calender/
 ---

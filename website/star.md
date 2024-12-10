@@ -1,6 +1,5 @@
 ---
 layout: page
-order: 4
 title: Star
 permalink: /star/
 ---
