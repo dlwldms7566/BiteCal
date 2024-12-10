@@ -14,7 +14,7 @@ documentation for details.
    :maxdepth: 2
    :caption: Contents:
 
-   about
+   about_the_project
    getting_started
    how_to_use
    technical_overview
