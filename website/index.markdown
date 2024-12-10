@@ -19,17 +19,17 @@ permalink: /
 
 <section class="image-card">
   <div class="row">
-    <a href="/calendar" class="card">
+    <a href="{{ '/calendar/' | relative_url }}" class="card">
       <img src="{{ '/assets/images/food1.jpg' | relative_url }}" alt="BiteCalender">
       <h2>BiteCalender</h2>
       <p>Create your own food calendar.</p>
     </a>
-    <a href="/log" class="card">
+    <a href="{{ '/log/' | relative_url }}" class="card">
       <img src="{{ '/assets/images/food2.jpg' | relative_url }}" alt="BiteLog">
       <h2>BiteLog</h2>
       <p>Create your own food log.</p>
     </a>
-    <a href="/star" class="card">
+    <a href="{{ '/star/' | relative_url }}" class="card">
       <img src="{{ '/assets/images/food3.jpg' | relative_url }}" alt="BiteStar">
       <h2>BiteStar</h2>
       <p>Rate and review your food logs.</p>
