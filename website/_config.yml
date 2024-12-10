@@ -38,7 +38,7 @@ plugins:
 
 menu_order:
   - Home
-  - Calendar
+  - Calender
   - Log
   - Star
 
