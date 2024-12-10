@@ -10,7 +10,7 @@ permalink: /
 <section class="description">
     <div class="row">
         <div class="col-12">
-            <p class="title">&#x1F389;  Welcome to BiteCal!</p>
+            <p class="title">&#x1F389;  Welcome to BiteCal! ttt</p>
             <p class="content">&#x1F60D; Create your very own food calendar.</p>
             <p class="content">&#x2728; Share your food logs with others.</p>
         </div>
