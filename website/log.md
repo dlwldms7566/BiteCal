@@ -2,6 +2,7 @@
 layout: page
 title: Log
 permalink: /log/
+order: 3
 ---
 
 <main class="log-page">

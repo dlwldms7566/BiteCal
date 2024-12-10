@@ -2,6 +2,7 @@
 layout: page
 title: Star
 permalink: /star/
+order: 4
 ---
 
 <div id="app">

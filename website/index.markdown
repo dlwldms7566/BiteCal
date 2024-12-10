@@ -5,6 +5,7 @@
 layout: default
 title: Home
 permalink: /
+order: 1
 ---
 
 <section class="description">
@@ -19,7 +20,7 @@ permalink: /
 
 <section class="image-card">
   <div class="row">
-    <a href="{{ '/calendar/' | relative_url }}" class="card">
+    <a href="{{ '/calender/' | relative_url }}" class="card">
       <img src="{{ '/assets/images/food1.jpg' | relative_url }}" alt="BiteCalender">
       <h2>BiteCalender</h2>
       <p>Create your own food calendar.</p>
