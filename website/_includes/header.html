@@ -11,7 +11,7 @@
       </div>
     </div>
     <div class="col-12">
-      <a href="/" class="header-title">BiteCal</a>
+      <a href="{{ '/' | relative_url }}" class="header-title">BiteCal</a>
     </div>
     <div class="fixed-right-menu">
       <i class="fas fa-search" onclick="toggleSearch()"></i>
@@ -33,10 +33,12 @@
     {%- endfor -%}
   </div>
   <div class="newSideNav" id="newSideNav">
-    {%- for path in page_paths -%} {%- assign my_page = site.pages | where:
-    "path", path | first -%} {%- if my_page.title -%}
-    <a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-    {%- endif -%} {%- endfor -%}
+    {%- assign sorted_pages = site.pages | sort: 'order' -%}
+    {%- for my_page in sorted_pages -%}
+      {%- if my_page.title -%}
+        <a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+      {%- endif -%}
+    {%- endfor -%}
   </div>
   {%- endif -%}
 </header>
