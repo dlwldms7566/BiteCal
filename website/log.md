@@ -1,6 +1,6 @@
 ---
 layout: page
-title: log
+title: Log
 permalink: /log/
 ---
 

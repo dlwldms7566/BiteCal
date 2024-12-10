@@ -1,6 +1,6 @@
 ---
 layout: page
-title: star
+title: Star
 permalink: /star/
 ---
 
