@@ -1,5 +1,6 @@
 ---
 layout: page
+order: 3
 title: Log
 permalink: /log/
 ---
