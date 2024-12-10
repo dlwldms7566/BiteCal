@@ -1,8 +1,5 @@
 <header>
   <div class="row">
-    {%- assign default_paths = site.pages | map: "path" -%} {%- assign
-    page_paths = site.header_pages | default: default_paths -%} {%- assign
-    titles_size = site.pages | map: 'title' | join: '' | size -%}
     <div class="fixed-left-menu">
       <div class="menu-btn" onclick="toggleMenu()">
         <div class="menu-btn__burger"></div>
