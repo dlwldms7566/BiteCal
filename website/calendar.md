@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Calender
-permalink: /calender/
+title: Calendar
+permalink: /calendar/
 order: 2
 ---
 

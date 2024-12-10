@@ -20,9 +20,9 @@ order: 1
 
 <section class="image-card">
   <div class="row">
-    <a href="{{ '/calender/' | relative_url }}" class="card">
-      <img src="{{ '/assets/images/food1.jpg' | relative_url }}" alt="BiteCalender">
-      <h2>BiteCalender</h2>
+    <a href="{{ '/calendar/' | relative_url }}" class="card">
+      <img src="{{ '/assets/images/food1.jpg' | relative_url }}" alt="BiteCalendar">
+      <h2>BiteCalendar</h2>
       <p>Create your own food calendar.</p>
     </a>
     <a href="{{ '/log/' | relative_url }}" class="card">
