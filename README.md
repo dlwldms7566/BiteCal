@@ -14,3 +14,7 @@ BiteCal is an intuitive platform that allows users to log their daily meals, tra
 ## License
 This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
 
+## Documentation
+The full project documentation is available at [ReadTheDocs](https://bitecal.readthedocs.io/).
+
+
