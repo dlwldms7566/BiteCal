@@ -26,6 +26,6 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 # 기본 HTML 테마 설정
 html_theme = 'sphinx_rtd_theme'
-html_static_path = ['_static']
+html_static_path = []
 
 
