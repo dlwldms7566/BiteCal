@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Calender
-permalink: /calender/
+title: Calendar
+permalink: /calendar/
+order: 2
 ---
 
 <main class="calendar-page">
