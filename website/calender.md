@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Calender
-permalink: /calender/
+permalink: /BiteCal/calender/
 ---
 
 <main class="calendar-page">

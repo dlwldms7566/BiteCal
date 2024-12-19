@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Log
-permalink: /log/
+permalink: /BiteCal/log/
 order: 3
 ---
 
