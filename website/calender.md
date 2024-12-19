@@ -58,14 +58,15 @@ permalink: /calender/
         if (e.target.classList.contains('calendar-day')) {
             const selectedDate = e.target.dataset.date;
             localStorage.setItem('selectedDate', selectedDate); // 선택한 날짜를 저장
-            window.location.href = "/BiteCal/log/"; // 정적 경로로 변경
+            window.location.href = "{{ site.baseurl }}/log/";
 
         }
     });
         document.getElementById('add-log-button').addEventListener('click', () => {
             const today = new Date().toISOString().split('T')[0]; // 오늘 날짜
             localStorage.setItem('selectedDate', today); // 오늘 날짜 저장
-            window.location.href = "/BiteCal/log/"; // 정적 경로로 변경
+            window.location.href = "{{ site.baseurl }}/log/";
+
         });
     
     // 현재 달과 연도를 표시하는 함수
