@@ -2,6 +2,7 @@
 layout: page
 title: Calender
 permalink: /calender/
+order: 2
 ---
 
 <main class="calendar-page">
